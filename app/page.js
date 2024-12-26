@@ -41,7 +41,9 @@ const LoginAdmin = () => {
               {adminPromoTexts[currentTextIndex].description}
             </motion.p>
           </motion.div>
-          <Image src={fotoAdmin} alt="Admin Promo" className="w-3/4 mt-6" />
+          <motion.div initial={{ scale: 0.8 }} animate={{ scale: 0.9 }} transition={{ duration: 5, repeatType: "reverse", repeat: Infinity }} className="w-3/4 mt-6">
+            <Image src={fotoAdmin} alt="Admin Promo" layout="responsive" />
+          </motion.div>
         </div>
       </Card>
 
